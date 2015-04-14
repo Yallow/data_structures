@@ -21,6 +21,7 @@ typedef struct List {
 List *List_create();
 void List_sort(List *list);
 void List_print(List *list);
+void List_destoy(List *list);
 
 // define a couple macros for the first and last nodes in the list
 #define List_first(A) ((A)->first != NULL ? (A)->first->value : NULL)
